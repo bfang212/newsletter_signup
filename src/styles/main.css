@@ -1,0 +1,272 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #94AEBF;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Header that wraps all inner content ---*/
+.header {
+  width: 100%;
+  background-color: #120f23;
+  max-width: 1440px;
+  height: 212px;
+}
+
+/* --- email and name left align container --*/
+.newsletter-container {
+  margin: auto;
+  width: 100%;
+  display: flex;
+}
+
+.left-align-name-collection, .left-align-email-collection, .left-align-congratulations {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+.newsletter-header {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 38px;
+  font-weight: 800;
+  color: #2ce056;
+  position: relative;
+  text-align: center;
+  line-height: 30px;
+  width: 35%;
+}
+
+.newsletter-header-congratulations {
+  width: 45%;
+}
+
+.newsletter-content {
+  width: 60%;
+}
+
+.newsletter-title {
+  font-weight: 900;
+  font-size: 28px;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.error-message {
+  color: red;
+  font-size: small;
+  line-height: 1.0;
+  margin: 0;
+}
+
+.Input {
+  background-color:rgb(255,255,255,0.1);
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  line-height: 32px;
+  padding-left: 1%;
+  font-style: normal;
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 white;
+}
+
+.Input-email {
+  width: 60%;
+  height: 45px;
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+.Input-text {
+  width: 33%;
+  height: 45px;
+  margin-right: 2%;  
+  margin-bottom: 1%;
+}
+
+.Input::placeholder {
+  color: white;
+  opacity: 0.4;
+}
+
+.not-valid {
+  box-shadow: 0px 0px 0px 1px rgba(255,0,0,1);
+}
+
+.Button {
+  background-color: #ED1F34;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 5px;
+  height: 45px;
+  width: 18%;
+  border: none;
+  outline: none;
+}
+
+.Button:hover {
+  cursor: pointer;
+  opacity: 1;
+  background-color: #f4f444;
+  color: #ED1F34;
+}
+
+.Checkbox:hover {
+  cursor: pointer;
+}
+
+.agreement {
+  margin-top: 1%;
+  display: flex;
+  width: 85%;
+}
+
+.agreement-text {
+  color: #888888;  
+  font-size: 12px; 
+  line-height: 14px;
+}
+
+.agreement input {
+  margin-right: 8px;
+}
+
+/* ---------- Media Queries --------- */
+@media only screen and (max-width: 1027px) {
+  .newsletter-header {
+    font-size: 30px;
+    width: 25%;
+  }
+
+  .newsletter-header-congratulations {
+    width: 45%;
+  }
+
+  .newsletter-content {
+    margin-top: 2%;
+    display: block;
+    width: 75%;
+  }
+
+  .newsletter-title  {
+    margin-top: 1%;
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  form.name-collection {
+    width: 80%;
+  }
+
+  .Button {
+    margin: auto;
+    width: 22%;
+  }
+
+  .agreement {
+    height: 50px;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .newsletter-container {
+    width: 100%;
+    margin: 0;
+    max-height: 240px;
+  }
+
+  .left-align-name-collection, .left-align-email-collection, .left-align-congratulations {
+    display: block;
+    text-align: center;
+  }
+
+  .newsletter-header {
+    width: 100%;
+    margin-top: 1%;
+  }
+
+  .newsletter-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .newsletter-title {
+    width: 80%;
+    font-size: 16px;
+    padding: 1%;
+    text-align: center;
+    margin: auto;
+  }
+
+  form.name-collection {
+    margin: auto;
+    text-align: center;
+  }
+
+  .newsletter-title-congratulations {
+    font-size: 24px;
+    width: 75%;
+    margin: auto;
+  }
+
+  .Input, .Button {
+    font-size: 14px;
+    height: 30px;
+  }
+
+  .Input-email {
+    width: 45%;
+  }
+
+  .Input-text {
+    width: 40%;
+  }
+
+  .Button {
+    display: block;
+    margin: auto;
+    width: 60%;
+  }
+
+  .Button-email-collection {
+    width: 20%;
+    display: inline-block;
+  }
+
+  .error-message {
+    margin-top: 1%;
+    font-size: 10px;
+  }
+
+  .agreement {
+    margin: auto;
+  }
+  
+  .agreement-text {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .Input-email {
+    margin-right: 0;
+    width: 80%;
+  }
+
+  .Button {
+    width: 80%;
+    display: block;
+  }
+}
